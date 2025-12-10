@@ -1,0 +1,345 @@
+/* Definição das variáveis de cores (Modo Claro Padrão) */
+:root {
+    --cor-fundo: #F0F2F5; /* Branco suave */
+    --cor-fundo-secundaria: #FFFFFF; /* Fundo de cartões */
+    --cor-texto-principal: #1F2937; /* Preto escuro */
+    --cor-texto-secundario: #4B5563; /* Cinza para parágrafos */
+    --cor-destaque: #007BFF; /* Azul DIO */
+    --cor-destaque-hover: #0056b3;
+    --cor-borda: #E5E7EB;
+    --cor-sombra: rgba(0, 0, 0, 0.05);
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    --cor-fundo: #121212; /* Fundo bem escuro */
+    --cor-fundo-secundaria: #1E1E1E; /* Cartões escuros */
+    --cor-texto-principal: #E0E0E0; /* Branco suave para texto */
+    --cor-texto-secundario: #B0B0B0; /* Cinza claro para parágrafos */
+    --cor-destaque: #BB86FC; /* Roxo/Magenta de destaque */
+    --cor-destaque-hover: #9A5EC9;
+    --cor-borda: #333333;
+    --cor-sombra: rgba(255, 255, 255, 0.05);
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.5s, color 0.5s;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-principal);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-fundo-secundaria);
+    border-bottom: 1px solid var(--cor-borda);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: flex-end; /* Alinha a navegação à direita */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--cor-destaque);
+}
+
+/* Botão de Tema */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--cor-texto-principal);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 30px; /* Espaçamento entre o botão e a navegação */
+    transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+    color: var(--cor-destaque);
+}
+
+/* Seções Principais */
+section {
+    padding: 60px 0;
+}
+
+h1, h2 {
+    color: var(--cor-destaque);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--cor-borda);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin: 0 auto 30px auto;
+    width: fit-content;
+    text-align: center;
+}
+
+p {
+    color: var(--cor-texto-secundario);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Seção de Perfil (Sobre Mim) */
+.profile-section {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid var(--cor-destaque);
+    box-shadow: 0 0 15px var(--cor-destaque);
+}
+
+.profile-section h1 {
+    font-size: 3rem;
+    color: var(--cor-texto-principal); /* Nome em cor neutra */
+    margin-bottom: 5px;
+}
+
+.profile-section h2 {
+    font-size: 1.2rem;
+    color: var(--cor-destaque);
+    border: none;
+    margin-bottom: 30px;
+}
+
+/* Seções de Informação (Formação e Cursos) */
+.info-section {
+    text-align: center;
+}
+
+/* Estilização para Formação (Timeline) */
+.timeline {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    background-color: var(--cor-fundo-secundaria);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--cor-destaque);
+    box-shadow: 0 2px 4px var(--cor-sombra);
+    text-align: left;
+}
+
+.timeline-item h3 {
+    color: var(--cor-texto-principal);
+    margin-bottom: 5px;
+}
+
+.timeline-item .institution {
+    color: var(--cor-destaque);
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.timeline-item .date {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--cor-texto-secundario);
+}
+
+/* Estilização para Cursos (Lista Simples) */
+.course-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.course-list li {
+    background-color: var(--cor-fundo-secundaria);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 1px 3px var(--cor-sombra);
+    text-align: left;
+}
+
+.course-list h4 {
+    color: var(--cor-destaque);
+    margin-bottom: 5px;
+}
+
+.course-list .provider {
+    color: var(--cor-texto-principal);
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.course-list .date {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--cor-texto-secundario);
+}
+
+
+/* Seção de Projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--cor-fundo-secundaria);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--cor-sombra);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--cor-borda);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px var(--cor-sombra);
+}
+
+.project-card h3 {
+    color: var(--cor-destaque);
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.project-link {
+    display: inline-block;
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: var(--cor-destaque-hover);
+}
+
+/* Seção de Tecnologias */
+.tech-section {
+    text-align: center;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tech-item {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo-secundaria);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Rodapé/Contato */
+footer {
+    background-color: var(--cor-fundo-secundaria);
+    border-top: 1px solid var(--cor-borda);
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+footer h2 {
+    color: var(--cor-destaque);
+    border: none;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: var(--cor-texto-secundario);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--cor-destaque);
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: var(--cor-texto-secundario);
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    .theme-toggle {
+        margin: 10px 0;
+    }
+}
