@@ -56,7 +56,7 @@ Se você gostou do meu trabalho ou tem alguma oportunidade, sinta-se à vontade 
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/Li-code1/Portfolio-Lilianelima.git](https://github.com/Li-code1/Portfolio-Lilianelima.git)
+    git clone [[https://github.com/Li-code1/Portfolio-Lilianelima.git](https://github.com/Li-code1/PortfolioLilianeLima.git)](https://github.com/Li-code1/PortfolioLilianeLima.git)
     ```
 2.  **Entre na pasta do projeto:**
     ```bash
