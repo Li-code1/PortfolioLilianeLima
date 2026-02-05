@@ -47,8 +47,8 @@ Aqui estão alguns dos projetos apresentados na seção "Projetos" do meu portf�
 
 Se você gostou do meu trabalho ou tem alguma oportunidade, sinta-se à vontade para entrar em contato:
 
-* **Email:** `lilianelimapsicanalista@gmail.com` 
-* **LinkedIn:** `https://www.linkedin.com/in/liliane-lima-psicanalista/
+* **Email:** `li,lima662@gmail.com` 
+* **LinkedIn:** `https://www.linkedin.com/in/liliane-lima-ti/
 * **GitHub:** `https://github.com/Li-code1
 * **Telefone:** `(13) 996079947`
 
